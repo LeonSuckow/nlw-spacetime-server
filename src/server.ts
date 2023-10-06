@@ -5,9 +5,9 @@ import cors from "@fastify/cors";
 import multipart from "@fastify/multipart";
 import fastifyJwt from "@fastify/jwt";
 import { memoriesRoutes } from "./routes/memories";
-import { authRoutes } from "./routes/auth";
 import { uploadRoutes } from "./routes/upload";
 import { resolve } from "path";
+import { authRoutes } from "./modules/auth/auth.routes";
 
 const app = fastify();
 
